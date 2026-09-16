@@ -58,6 +58,7 @@ h6 {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 footer .michelle {
@@ -66,9 +67,17 @@ footer .michelle {
     border-radius: 50%;
 }
 
+.footer__second-wrap {
+    display: flex;
+    gap: 5px;
+
+}
+
 .footer__para-wrap {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    justify-content: center;
 }
 
 footer .icon {
@@ -80,4 +89,9 @@ footer .icon {
 footer .share {
     width: 30px;
     height: 30px;
+}
+
+article,
+footer {
+    margin-inline: 32px;
 }
