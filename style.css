@@ -1,0 +1,83 @@
+/* CSS RESET */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* STYLES */
+
+
+/* FOOTER STYLES */
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer .michelle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.footer__para-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+footer .share {
+    width: 30px;
+    height: 30px;
+}
