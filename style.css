@@ -52,6 +52,25 @@ h6 {
 
 /* STYLES */
 
+/* LIST STYLES */
+
+ul {
+    /* border: 2px solid grey; */
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    gap: 16px;
+}
+
+ul img.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
 
 /* FOOTER STYLES */
 
@@ -59,6 +78,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* REMOVE STYLES */
+    background-color: lightgrey;
+    border: 2px solid grey;
 }
 
 footer .michelle {
@@ -80,18 +103,29 @@ footer .michelle {
     justify-content: center;
 }
 
-footer .icon {
+.footer__hidden-wrap {
     display: none;
-    width: 30px;
-    height: 30px;
+}
+
+.show {
+    /* border: 2px solid grey; */
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    gap: 10px;
 }
 
 footer .share {
     width: 30px;
     height: 30px;
+    margin-inline-end: 20px;
 }
 
 article,
 footer {
     margin-inline: 32px;
+}
+
+.hidden {
+    display: none;
 }

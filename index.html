@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="script.js"></script>
 
     <link
       rel="icon"
@@ -43,27 +44,44 @@
             <span>20 Jun 2020</span>
           </div>
         </div>
-        <span></span>
-        <!--(share)this text will be dynamically added-->
-        <img
-          src="./images/icon-facebook.svg"
-          alt="facebook logo"
-          class="icon"
-        />
-        <img src="./images/icon-twitter.svg" alt="twitter logo" class="icon" />
-        <img
-          src="./images/icon-pinterest.svg"
-          alt="pinterest logo"
-          class="icon"
-        />
+        <div class="footer__hidden-wrap">
+          <span class="footer__share-text"></span>
+          <!--(share)this text will be dynamically added-->
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/icon-facebook.svg"
+                  alt="facebook icon"
+                  class="social-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/icon-twitter.svg"
+                  alt="twitter icon"
+                  class="social-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/icon-pinterest.svg"
+                  alt="pinterest icon"
+                  class="social-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
         <img src="./images/icon-share.svg" alt="" class="share" />
       </footer>
     </section>
 
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Gyasi Thomas</a>.
-    </footer>
+    </footer> -->
   </body>
 </html>
