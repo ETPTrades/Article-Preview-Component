@@ -93,6 +93,7 @@ li {
 /* CONTACT STYLES */
 
 .contact {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -143,14 +144,15 @@ li {
 
 .contact__hidden-wrap {
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     display: flex;
     align-items: center;
     gap: 10px;
-    /* margin-left: 20px; */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 200ms ease-in-out, visibility 0s linear 200ms;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out, visibility 0s linear 200ms;
 }
+
 
 .contact__hidden-wrap.show {
     display: flex;
@@ -158,6 +160,7 @@ li {
     gap: 10px;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     transition: opacity 200ms ease-in-out, visibility 0s linear 0;
 }
 
