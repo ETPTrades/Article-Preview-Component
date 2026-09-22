@@ -1,16 +1,17 @@
-const footer = document.querySelector("footer");
-const secondWrap = document.querySelector(".footer__second-wrap");
-const share = document.querySelector(".footer__share-text");
-const hiddenWrap = document.querySelector(".footer__hidden-wrap");
+const contact = document.querySelector(".contact");
+const secondWrap = document.querySelector(".contact__second-wrap");
+const share = document.querySelector(".contact__share-text");
+const hiddenWrap = document.querySelector(".contact__hidden-wrap");
 
 
 
-footer.addEventListener("mouseenter", () => {
-    secondWrap.classList.toggle("hidden");
-    hiddenWrap.classList.toggle("show");
+contact.addEventListener("mouseenter", () => {
+    secondWrap.classList.add("hidden");
+    hiddenWrap.classList.add("show");
     share.innerText = "SHARE";
 })
-footer.addEventListener("mouseleave", () => {
-    secondWrap.classList.toggle("hidden");
+contact.addEventListener("mouseleave", () => {
+    secondWrap.classList.remove("hidden");
+    hiddenWrap.classList.remove("show");
     share.innerText = "";
 })
