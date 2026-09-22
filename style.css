@@ -53,9 +53,21 @@ h6 {
 /* ARTICLE CARD STYLES */
 
 .article-card {
-    width: clamp(288px, 80vw, 400px);
+    width: clamp(288px, 80vw, 300px);
     margin: 25px auto 25px;
     background-color: hsl(60, 13%, 95%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.dark-text {
+    margin-inline: 32px;
+    color: #292929;
+}
+
+.light-text {
+    margin-inline: 32px;
+    color: #777;
 }
 
 /* LIST STYLES */
@@ -83,16 +95,25 @@ li {
 .contact {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 50px;
     height: 75px;
     /* REMOVE STYLES */
     /* background-color: lightgrey;
     border: 2px solid grey; */
 }
 
+.contact-background-color {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in-out, visibility 0s linear 300ms;
+    background-color: #21334a;
+    width: 100%;
+}
+
 .contact .michelle {
-    width: 65px;
-    height: 65px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
@@ -106,7 +127,7 @@ li {
 
 .contact__second-wrap.hidden {
     display: flex;
-    gap: 5px;
+    /* gap: 5px; */
     opacity: 0;
     visibility: hidden;
     transition: opacity 300ms ease-in-out, visibility 0s linear 300ms;
@@ -117,7 +138,7 @@ li {
     flex-direction: column;
     gap: 5px;
     justify-content: center;
-    font-size: clamp(10px, calc(6vw - 14px), 16px);
+    font-size: clamp(10px, calc(6vw - 14px), 14px);
 }
 
 .contact__hidden-wrap {
@@ -147,13 +168,18 @@ li {
 }
 
 .contact .share {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-inline-end: 20px;
 }
 
-article {
-    margin-inline: 32px;
+.contact button {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }
 
 /* MEDIA QUERIES */
