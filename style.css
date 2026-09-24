@@ -99,17 +99,11 @@ li {
     justify-content: space-around;
     gap: 50px;
     height: 75px;
-    /* REMOVE STYLES */
-    /* background-color: lightgrey;
-    border: 2px solid grey; */
+    transition: background-color 300ms ease-in-out;
 }
 
 .contact-background-color {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 300ms ease-in-out, visibility 0s linear 300ms;
     background-color: #21334a;
-    width: 100%;
 }
 
 .contact .michelle {
