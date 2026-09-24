@@ -144,6 +144,7 @@ li {
 
 .contact__hidden-wrap {
     position: absolute;
+    transform: translateX(-50px);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -189,6 +190,7 @@ li {
 
 @media(min-width: 1000px) {
     .article-card {
+        overflow: visible;
         display: flex;
         width: clamp(500px, 60vw, 700px);
         max-height: 300px;
@@ -196,6 +198,44 @@ li {
 
     .article-card img {
         width: 40%;
+    }
+
+    /* TESTING PILL ANIMATION AT 1000PX */
+
+
+    .contact__hidden-wrap {
+        right: 10px;
+        transform: translateX(45px) translateY(-20px);
+    }
+
+    .contact__hidden-wrap.show {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 200ms ease-in-out, visibility 0s linear 0;
+        right: 10px;
+        transform: translateX(40px) translateY(-75px);
+        background-color: #21334a;
+        border-radius: 15px;
+        padding-inline: 10px;
+    }
+
+    .contact__hidden-wrap.show::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 60%;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #21334a;
+
+    }
+
+    .article-card>img {
+        border-radius: 10px 0 0 10px;
     }
 
 }
