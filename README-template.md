@@ -35,83 +35,32 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Complete project solution](https://github.com/ETPTrades/Article-Preview-Component)
+- Live Site URL: [Check out this project demo!](https://etptrades.github.io/Article-Preview-Component/)
 
 ## My process
+
+Getting started was pretty straightforward since this is just a single card component project.
+_First_, I began by adding all of the HTML elements to the page in the order in which they appeared in the solution preview.
+_Second_, I put everything into containers using semantic HTML to ensure everything was clearly sectioned.
+_Third_, I added styling using CSS and flex-box for responsiveness
+_Fourth_, I used JavaScript to manipulate the DOM in order to make the contact section of the article card dynamic depending on the user's interactions.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+_Absolute Positioning_: For the contact section of this project, there were a couple of sections that needed to be absolutely positioned for effect.
 
-To see how you can add code snippets, see below:
+_Transform and Transition Properties_ When users interact with the contact section of the card component, I wanted the contact information to appear and disappear smoothly. For that I had to play around with both the transform and transition properties. The initial challenge was figuring out which properties should go on which selectors.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+_DOM Manipulation_ Grabbing elements from the DOM and manipulating their styles using JavaScript was fun. Took me a while to get the hang of selecting elements using methods such as query selector, and get element by ID, but I feel I was able to catch on fairly quickly. Only scratched the surface of what DOM Manipulation can really do in this project, and I'm looking forward to using it much more in the future.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Moving forward I really want to continue using JavaScrip to make webpages come alive. There are many different layers to JavaScript, and I'm looking forward to digging deep into every one of them. On the responsive side of things I need a log more practice with flex-box and grid. There was no need for grid in this particular project, but it's definitely a weak spot for me. I do actually have a stronger grasp on the flex-box layout mode, but nowhere near where I want to be just yet.
