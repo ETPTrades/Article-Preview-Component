@@ -3,6 +3,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -60,20 +61,21 @@ h6 {
     border-radius: 10px;
 }
 
-.dark-text {
+.article-card p {
     margin-inline: 32px;
+}
+
+.dark-text {
     color: #292929;
 }
 
 .light-text {
-    margin-inline: 32px;
     color: #777;
 }
 
 /* LIST STYLES */
 
 ul {
-    /* border: 2px solid grey; */
     display: flex;
     align-items: center;
     padding-left: 0;
@@ -120,14 +122,6 @@ li {
     transition: opacity 500ms ease-in-out, visibility 0s linear 0s;
 }
 
-.contact__second-wrap.hidden {
-    display: flex;
-    /* gap: 5px; */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 300ms ease-in-out, visibility 0s linear 300ms;
-}
-
 .contact__para-wrap {
     display: flex;
     flex-direction: column;
@@ -137,22 +131,20 @@ li {
 }
 
 .contact__hidden-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
     position: absolute;
     transform: translateX(-50px);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     transition: opacity 200ms ease-in-out, transform 200ms ease-in-out, visibility 0s linear 200ms;
 }
 
 
 .contact__hidden-wrap.show {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -183,6 +175,7 @@ li {
 /* MEDIA QUERIES */
 
 @media(min-width: 1000px) {
+
     .article-card {
         overflow: visible;
         display: flex;
@@ -194,34 +187,40 @@ li {
         width: 40%;
     }
 
-    /* TESTING PILL ANIMATION AT 1000PX */
+    .contact-background-color {
+        background-color: transparent;
+    }
 
+    .contact__second-wrap.hidden {
+        visibility: visible;
+        opacity: 1;
+    }
 
     .contact__hidden-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-inline: 30px;
         right: 10px;
         transform: translateX(45px) translateY(-20px);
     }
 
     .contact__hidden-wrap.show {
-        display: flex;
-        align-items: center;
-        gap: 10px;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        transition: opacity 200ms ease-in-out, visibility 0s linear 0;
         right: 10px;
         transform: translateX(40px) translateY(-75px);
         background-color: #21334a;
         border-radius: 15px;
-        padding-inline: 10px;
     }
 
     .contact__hidden-wrap.show::after {
         content: "";
         position: absolute;
         bottom: -8px;
-        left: 60%;
+        left: 56%;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid #21334a;
